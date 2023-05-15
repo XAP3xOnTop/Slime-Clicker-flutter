@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    touch-action: manipulation;
+}
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+
+h3{
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.mainB{
+    height: 60px;
+    width: 80px;
+}
+
+.shopDiv{
+    flex: left;
+    display: flex;
+    margin-bottom: 20px;
+    display: table;
+}
+
+.shop{
+    margin-left: 20px;
+    position: relative;
+    top: 200px;
+}
+
+
+.shopText{
+    margin-left: 10px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-left: 10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .shopText{
+        font-size: 25px;
+    }
+}
+
+.shopB{
+    color: red;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+#button{
+    top: 100px;
+    position: relative;
+    text-align: center;  
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+button:hover{
+    top: 1px;
+}
+
+button:active{
+    top: 1.5px;
+}

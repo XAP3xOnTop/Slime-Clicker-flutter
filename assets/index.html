@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='script.js'></script>
+    <title>Klikaci hra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="disable-dbl-tap-zoom">
+    <h1>Klikaci hra</h1>
+    <h2 id="pocet">0$</h2>
+    <h3>1 klik = +1$</h3>
+    <div class="disable-dbl-tap-zoom" id="button">
+        <button class="disable-dbl-tap-zoom" id="klikB" class="mainB" onclick="klik()">
+            <img class="mainB" src="slime.png">
+        </button>
+    </div>
+    <div class="shop">
+        <ul id="shop">
+            <div class="shopDiv">
+                <button class="shopB" data-cost="10" data-can="false" id="multiClick" onclick="buy(this)">10$</button>
+                <p class="shopText">Prida +1 na kazdy klik</p>
+            </div>
+
+            <div class="shopDiv">
+                <button class="shopB" data-cost="10" data-can="false" id="perSec" onclick="buy(this)">10$</button>
+                <p class="shopText">Prida 1 kazdou sekundu</p>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
